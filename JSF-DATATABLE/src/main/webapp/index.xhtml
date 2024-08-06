@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>
+    <title>JSF DATA TABLE</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h3>Student Details</h3>
+    <h:form>
+        <h:dataTable value="#{studentdata.list}" var="row" styleClass="table">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Student ID" />
+                </f:facet>
+                <h:outputText value="#{row.studentid}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Student Name" />
+                </f:facet>
+                <h:outputText value="#{row.name}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Student CGPA" />
+                </f:facet>
+                <h:outputText value="#{row.cgpa}" />
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</body>
+</html>
