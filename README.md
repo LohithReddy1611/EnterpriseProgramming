@@ -1,5 +1,4 @@
 # EnterpriseProgramming
-Enterprise Programming Examples Repository
 Welcome to the Enterprise Programming Examples Repository! This repository is dedicated to providing a comprehensive collection of examples and tutorials covering various topics in enterprise programming. Whether you're a beginner looking to understand the basics or an experienced developer aiming to refine your skills, this repository has something for everyone.
 
 What You'll Find Here
